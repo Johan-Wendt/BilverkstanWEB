@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Update Car</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <a href="index.html">To start</a> <br>
+        <form action="http://localhost:8200/booking/" id="theUpdateForm" method="post">
+            <fieldset>
+                <legend>Booking information:</legend>
+                Costumer Id:<br>
+                <input type="text" name="costumerId" id="costumerId"><br><br>
+                Car registration id:<br>
+                <input type="text" name="carRegistrationId" id="carRegistrationId"><br><br>
+                Date submissed (yyyy-MM-dd):<br>
+                <input type="text" name="dateSubmissed" id="dateSubmissed"><br><br>
+                Time estimated finished (yyyy-MM-dd HH:mm:ss):<br>
+                <input type="text" name="dateDoneEst" id="dateDoneEst"><br><br>
+                Time actually finished (yyyy-MM-dd HH:mm:ss):<br>
+                <input type="text" name="dateDoneAct" id="dateDoneAct"><br><br>
+                Time picked up (yyyy-MM-dd HH:mm:ss):<br>
+                <input type="text" name="datePickedUp" id="datePickedUp"><br><br>
+                Time paid (yyyy-MM-dd HH:mm:ss):<br>
+                <input type="text" name="datePaid" id="datePaid"><br><br>
+                Mechanic id:<br>
+                <input type="text" name="mechanic" id="mechanic"><br><br>
+                Estimated price:<br>
+                <input type="text" name="estimatePrice" id="estimatePrice"><br><br>
+                Paid price:<br>
+                <input type="text" name="paidPrice" id="paidPrice"><br><br>
+                Time estimated to start repair (yyyy-MM-dd HH:mm:ss)<br>
+                <input type="text" name="dateRepairEst" id="dateRepairEst"><br><br>
+                Time repair actually started (yyyy-MM-dd HH:mm:ss):<br>
+                <input type="text" name="dateRepairAct" id="dateRepairAct"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <div id="debug"></div>
+         <script type="text/javascript" src="updateBookingByNumber.js"></script>
+    </body>
+</html>

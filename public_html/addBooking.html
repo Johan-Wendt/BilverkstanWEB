@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Verkstan</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <a href="index.html">To start</a> <br>
+        <form action="http://localhost:8200/booking" id="theForm" method="post">
+            <fieldset>
+                <legend>Booking information:</legend>
+                Costumer Id:<br>
+                <input type="text" name="costumerId" value=""><br><br>
+                Car registration id:<br>
+                <input type="text" name="carRegistrationId" value=""><br><br>
+                Date submissed (yyyy-MM-dd):<br>
+                <input type="text" name="dateSubmissed" value=""><br><br>
+                Time estimated finished (yyyy-MM-dd HH:mm:ss):<br>
+                <input type="text" name="dateDoneEst" value=""><br><br>
+                Time actually finished (yyyy-MM-dd HH:mm:ss):<br>
+                <input type="text" name="dateDoneAct" value=""><br><br>
+                Time picked up (yyyy-MM-dd HH:mm:ss):<br>
+                <input type="text" name="datePickedUp" value=""><br><br>
+                Time paid (yyyy-MM-dd HH:mm:ss):<br>
+                <input type="text" name="datePaid" value=""><br><br>
+                Mechanic id:<br>
+                <input type="text" name="mechanic" value=""><br><br>
+                Estimated price:<br>
+                <input type="text" name="estimatePrice" value=""><br><br>
+                Paid price:<br>
+                <input type="text" name="paidPrice" value=""><br><br>
+                Time estimated to start repair (yyyy-MM-dd HH:mm:ss)<br>
+                <input type="text" name="dateRepairEst" value=""><br><br>
+                Time repair actually started (yyyy-MM-dd HH:mm:ss):<br>
+                <input type="text" name="dateRepairAct" value=""><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <div id="debug"></div>
+         <script type="text/javascript" src="addBooking.js"></script>
+    </body>
+</html>
